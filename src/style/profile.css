@@ -1,0 +1,139 @@
+.main-container section.profile > div.profile-section {
+  /* border: 1px dotted #724eac; */
+  height: fit-content;
+  padding: 5px;
+  position: relative;
+}
+.main-container section.profile > div.profile-section:hover {
+  border: 1px solid var(--theme-color-05);
+  box-sizing: content-box;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.main-container section.profile {
+  order: 0;
+  position: relative;
+  display: block;
+  overflow: auto;
+  position: sticky;
+  height: 100vh;
+  top: 0px;
+  /* grid-auto-rows: 50px; */
+  /* grid-template-rows: 250px auto 2em 120px auto auto; */
+  padding: 1rem;
+}
+
+section.profile .sub-title {
+  color: var(--theme-color-02);
+  text-transform: capitalize;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  margin-bottom: 8px;
+}
+section.profile > div.profile-section > *:last-child {
+  padding-left: 1rem;
+  color: var(--theme-color-03);
+}
+
+section.profile .img-profile {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.profile .img-profile .img {
+  width: 250px;
+  height: 250px;
+  background-image: url(https://pbs.twimg.com/media/EEMgBBJWkAAUSUS.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+section.profile .names-profile {
+  font-size: 27px;
+  text-transform: capitalize;
+  word-break: normal;
+  line-height: 1.25;
+  font-weight: 600;
+  font-weight: bold;
+  color: var(--theme-color-02);
+}
+section.profile .position-jobs-profile {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  color: var(--theme-color-03);
+  line-height: 24px;
+}
+
+/* section.profile .work-experience-profile {
+} */
+section.profile .work-experience-profile .last-job {
+  padding: 1.5rem 0 1rem !important;
+  width: 100%;
+  position: relative;
+  margin: 2rem 0 3rem;
+}
+.last-job > .line-time,
+.circle-time {
+  background: var(--theme-color-04);
+}
+.last-job .line-time {
+  width: 30%;
+  height: 0.3rem;
+  position: relative;
+  background: var(--theme-color-01);
+  background: linear-gradient(
+    90deg,
+    var(--theme-color-01) 12%,
+    var(--theme-color-04) 100%
+  );
+}
+.last-job .circle-time {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: calc(50% - calc(20px / 2));
+  right: 0;
+}
+.last-job .name-last-job {
+  width: 150px;
+  position: absolute;
+  margin-top: 1rem;
+  left: calc(100% - calc(150px / 2));
+  text-transform: capitalize;
+  text-align: center;
+}
+.last-job .title-last-job {
+  width: 150px;
+  position: absolute;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  color: var(--theme-color-03);
+  text-align: center;
+  top: -2.5rem;
+  left: calc(100% - calc(150px / 2));
+}
+
+section.profile .education-profile {
+  height: 110px !important;
+  overflow: hidden;
+}
+section.profile .education-profile .lista {
+  position: relative;
+}
+section.profile .education-profile .fade {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+  background: var(--theme-color-01);
+  background: linear-gradient(
+    0deg,
+    var(--theme-color-01) 12%,
+    rgba(72, 155, 72, 0) 100%
+  );
+}
